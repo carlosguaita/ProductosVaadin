@@ -1,6 +1,6 @@
 package com.producto.views;
 
-import com.producto.views.nuevoproducto.NuevoProductoView;
+import com.producto.views.productos.NuevoProductoView;
 import com.producto.views.productos.ProductosView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -52,7 +52,7 @@ public class MainLayout extends AppLayout {
         SideNav nav = new SideNav();
 
         nav.addItem(new SideNavItem("Productos", ProductosView.class, LineAwesomeIcon.COLUMNS_SOLID.create()));
-        nav.addItem(new SideNavItem("Nuevo Producto", NuevoProductoView.class, LineAwesomeIcon.USER.create()));
+        //nav.addItem(new SideNavItem("Nuevo Producto", NuevoProductoView.class, LineAwesomeIcon.USER.create()));
 
         return nav;
     }
