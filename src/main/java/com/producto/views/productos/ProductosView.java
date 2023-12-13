@@ -78,18 +78,21 @@ public class ProductosView extends Composite<VerticalLayout> {
                     Button botonEditar = new Button();
                     botonEditar.addThemeVariants(ButtonVariant.LUMO_SUCCESS);
                     botonEditar.addClickListener(e -> {
-
+                        botonEditar.getUI().ifPresent(ui ->
+                                ui.navigate(NuevoProductoView.class,producto.getCodigo()));
                     });
                     botonEditar.setIcon(new Icon(VaadinIcon.EDIT));
 
+                    /*
                     Button botonVer = new Button();
                     botonVer.addThemeVariants(ButtonVariant.LUMO_CONTRAST);
                     botonVer.addClickListener(e -> {
 
                     });
                     botonVer.setIcon(new Icon(VaadinIcon.EYE));
+                    */
 
-                    HorizontalLayout buttons = new HorizontalLayout(botonBorrar,botonEditar,botonVer);
+                    HorizontalLayout buttons = new HorizontalLayout(botonBorrar,botonEditar);
                     return buttons;
                 })).setHeader("Manage").setAutoWidth(true);
 

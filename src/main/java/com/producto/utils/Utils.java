@@ -13,8 +13,8 @@ public class Utils {
     public static List<Producto> listaProductos = new ArrayList<>(
             List.of(
                     new Alimento("Alimento","Leche",1.2,"P001",100,"Vita","01/02/2023","01/03/2023",null),
-                    new Tecnologia("Tecnologia","Audifonos",30,"P002",50,"JBL","JBL",5),
-                    new Electrodomestico("Electro","Cocina",350,"P003",30,"Mabe","Mabe",120,2)
+                    new Tecnologia("Tecnología","Audifonos",30,"P002",50,"JBL","JBL",5),
+                    new Electrodomestico("Electrodomestico","Cocina",350,"P003",30,"Mabe","Mabe",120,2)
             )
     );
 }
